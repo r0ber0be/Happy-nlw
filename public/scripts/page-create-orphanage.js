@@ -7,7 +7,7 @@ L.tileLayer(
 
 // create icon
 const icon = L.icon({
-  iconUrl: "./public/images/map-marker.svg",
+  iconUrl: "/images/map-marker.svg",
   iconSize: [58, 68],
   iconAnchor: [29, 68]
 });
@@ -77,7 +77,14 @@ function toggleSelect(event) {
   const input = document.querySelector('[name="open_on_weekends"]');
   //verificar se sim ou não
   input.value = button.dataset.value;
-  //pegar o botão clicado
-  
+  //pegar o botão clicado 
 }
 
+//function validate(event) {
+  //validar se lat e len estão preenchidos  
+  //const needsLatAndLng = true;
+  //if(needsLatAndLng) {
+    //event.preventDefault()
+    //alert("Selecione um ponto no mapa")
+  //}
+//}
